@@ -1,0 +1,31 @@
+.site-footer {
+  width: 100%;
+  background: var(--color-green-dark);
+  color: rgb(255 255 255 / 88%);
+}
+
+.footer-content {
+  display: flex;
+  width: min(1120px, calc(100% - 48px));
+  min-height: 76px;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin: 0 auto;
+  font-size: 13px;
+}
+
+.footer-content p {
+  margin: 0;
+}
+
+@media (max-width: 600px) {
+  .footer-content {
+    width: min(100% - 32px, 1120px);
+    flex-direction: column;
+    justify-content: center;
+    gap: 6px;
+    padding: 18px 0;
+    text-align: center;
+  }
+}
